@@ -1,19 +1,20 @@
 //
 //  AppDelegate.swift
-//  loginAuth
+//  bookit
 //
-//  Created by Muazzam.Aziz on 2022/09/29.
+//  Created by Muazzam.Aziz on 2022/09/27.
 //
 
 import UIKit
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
